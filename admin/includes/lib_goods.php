@@ -1187,7 +1187,7 @@ function reformat_image_name($type, $goods_id, $source_img, $position='')
 function move_image_file($source, $dest)
 {
     if (@copy($source, $dest)) {
-        @unlink($source);
+//        @unlink($source);
         return true;
     }
     return false;
